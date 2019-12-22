@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Гостевая книга</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/script.js"></script>
+    <div class="container">
+        <div id="error" class="alert alert-danger" style="display:none;">Ошибка при отправке запроса на сервер</div>
+        <div>
+            <div class="form-group">
+                <label for="name">Имя</label>
+                <input type="name" class="form-control" id="name" placeholder="Ваше имя">
+                <small id="emailHelp" class="form-text text-muted"></small>
+            </div>
+            <div class="form-group">
+                <label for="body">Содержание</label>
+                <textarea class="form-control" id="body" rows="3" placeholder="Текст"></textarea>
+            </div>
+            <button id="save" class="btn btn-primary">Сохранить</button>
+        </div>
+        <hr/>
+        <table class="table table-bordered table-striped">
+            <thead>
+            <tr>
+                <th scope="col">Имя</td>
+                <th scope="col">Дата</td>
+                <th scope="col">Содержание</td>
+            </tr>
+            </thead>
+            <tbody id="guestbook" class="container">
+
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
